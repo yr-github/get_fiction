@@ -19,12 +19,12 @@ receive_emails2 = 接收邮箱地址2
 [query_time]
 time = 60
 ```
-其中query_time 下的time字段意义是查询更新周期，单位为秒
-以上邮箱参数配置可以参考此[文章](https://www.yrblog.cn/2019/08/27/androidlinux03/ "文章")具体学习。
-2. 前往[小说网站](http://www.biquge.info/ "小说网站")获取你想追更的小说id，本文以万族之劫为例
-在该网站找到万族之劫的书籍页面url为：https://www.biquge.info/0_273/
-那么它的id就为0_273，进入书籍业面获取你的观看进度。
-获取id与观看进度后在[fiction_chapter]下新建该id字段
+其中query_time 下的time字段意义是查询更新周期，单位为秒<br>
+以上邮箱参数配置可以参考此[文章](https://www.yrblog.cn/2019/08/27/androidlinux03/ "文章")具体学习 <br>
+2. 前往[小说网站](http://www.biquge.info/ "小说网站")获取你想追更的小说id，本文以万族之劫为例<br>
+在该网站找到万族之劫的书籍页面url为：https://www.biquge.info/0_273/<br>
+那么它的id就为0_273，进入书籍页面获取你的观看进度<br>
+获取id与观看进度后在[fiction_chapter]下新建该id字段<br>
 ```
 id=章节名(部分即可)
 ```
