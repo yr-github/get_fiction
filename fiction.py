@@ -15,7 +15,6 @@ class GetFiction:
             resp = requests.get(self.host.format(fiction=self.fiction))
             bs = BeautifulSoup(resp.content,'html.parser')
             ddlist = bs.find_all('dd')
-            #TODO 解决汉字章节的问题，初步判断可以通过dd数解决，这样就不用判断阿拉伯还是中文数字了
             count = -5
             for dd in ddlist[count:]:
                 title = dd.contents[0].attrs['title']
