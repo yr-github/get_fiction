@@ -5,7 +5,7 @@ import time
 
 if __name__ == '__main__':
     while True:
-        #try:
+        try:
             config = configparser.ConfigParser()
             config.read("config.ini",encoding='utf-8')
             section = "fiction_chapter"
@@ -17,7 +17,7 @@ if __name__ == '__main__':
             getfic_obj.check_update()
             config.write(open("config.ini", "w",encoding='utf-8'))
             time.sleep(int(config['query_time']['time']))
-        #except:
+        except:
             pass
 
 
